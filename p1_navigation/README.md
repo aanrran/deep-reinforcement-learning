@@ -36,10 +36,10 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### File Information:
 
-- Navigation.ipynb: the whole code for the basic version of this project. The input state is a simple 37 elements array.
-- Navigation_Pixels.ipynb: the challenge version of this project. The agent has to use computer vision to navigate.
-- model.pth: this file is the trained basic agent model that contains the saved Model Weights for this project
-- scores.csv: this file stores my basic agent performance scores during training
+- Navigation.ipynb:                 the whole code for the basic version of this project. The input state is a simple 37 elements array.
+- Navigation_Pixels.ipynb:     the challenge version of this project. The agent has to use computer vision to navigate.
+- model.pth:                           this file is the trained basic agent model that contains the saved Model Weights for this project
+- scores.csv:                          this file stores my basic agent performance scores during training
 
 ### Training Code and Framework:
 
