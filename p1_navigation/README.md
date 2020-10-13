@@ -43,7 +43,7 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### Architecture:
 
-The agent will explore the environment and collect experience to its buffer bucket by taking actions generated from its neuronetwork. Meanwhile, the agent will use the experience buffer bucket to train its network.<img src="Image/architecture.JPG" alt="image1"  width="800" height="450"/>
+The agent will explore the environment and collect experience to its buffer bucket by taking actions generated from its neuronetwork. Meanwhile, the agent will use the experience buffer bucket to train its network.<img src="Image/architecture.JPG" alt="image1"  width="1100" height="620"/>
 
 ### Network Model:
 
