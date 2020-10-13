@@ -45,9 +45,18 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 The agent will explore the environment and collect experience to its buffer bucket by taking actions generated from its neuronetwork. Meanwhile, the agent will use the experience buffer bucket to train its network.<img src="Image/architecture.JPG" alt="image1"  width="800" height="500"/>
 
+### Network Model:
+
+I used the resnet 18 + three fully connected layers![resnet 18](https://www.researchgate.net/profile/Muhammad_Hasan19/publication/323063171/figure/fig1/AS:603178554904576@1520820382219/Proposed-Modified-ResNet-18-architecture-for-Bangla-HCR-In-the-diagram-conv-stands-for.png)
+
+The fully connected layer looks like this:
+![image-20201013123523372](C:\Users\Aaron\AppData\Roaming\Typora\typora-user-images\image-20201013123523372.png)
+
 ### Training Code and Framework:
 
 Please look at Navigation.ipynb and Navigation_Pixels.ipynb for reference.
+
+the training parameters are shown below:![image-20201013122734152](C:\Users\Aaron\AppData\Roaming\Typora\typora-user-images\image-20201013122734152.png)![image-20201013122913072](C:\Users\Aaron\AppData\Roaming\Typora\typora-user-images\image-20201013122913072.png)
 
 ### Training Results:
 
@@ -63,3 +72,7 @@ In the basic version, my agent learned from information such as its velocity, al
 
 - design more data efficient agent with PER(Prioritized Replay).
 - fine tune the agent to get better score(now my Pixel version code runs well, but the average score still can not reach 13. I am still training, and hopefully it will be successful this time. The training time takes many hours.)
+
+### Reference:
+
+- GDRL book
