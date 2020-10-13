@@ -49,7 +49,7 @@ Please look at Navigation.ipynb and Navigation_Pixels.ipynb for reference.
 
 My basic agent training take place in file `Navigation.ipynb`. The agent took about 535 episodes to reach 13 average score:
 
-<img src="./Image/report.JPG" alt="image1"  width="800" height="500"/>.
+<img src="Image/report.JPG" alt="image1"  width="800" height="500"/>.
 
 ### Challenge: Learning from Pixels
 
