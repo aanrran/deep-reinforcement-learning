@@ -13319,7 +13319,8 @@ States have length: 37
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-Turn-off-the-Kernal-auto-Sleep">2. Turn off the Kernal auto Sleep<a class="anchor-link" href="#2.-Turn-off-the-Kernal-auto-Sleep">&#182;</a></h3>
+<h3 id="3.-Turn-off-the-Auto-Sleep">3. Turn off the Auto Sleep<a class="anchor-link" href="#3.-Turn-off-the-Auto-Sleep">&#182;</a></h3><p>This function helps with the long time training. Usually, the server will turn off, when it find out that my computer is idle. This function prevent the server awake.</p>
+
 </div>
 </div>
 </div>
@@ -13394,7 +13395,7 @@ States have length: 37
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.-It's-Your-Turn!">4. It's Your Turn!<a class="anchor-link" href="#4.-It's-Your-Turn!">&#182;</a></h3><p>Now it's your turn to train your own agent to solve the environment!  A few <strong>important notes</strong>:</p>
+<h4 id="some-instructions-about-the-envirment:">some instructions about the envirment:<a class="anchor-link" href="#some-instructions-about-the-envirment:">&#182;</a></h4><p>Now it's your turn to train your own agent to solve the environment!  A few <strong>important notes</strong>:</p>
 <ul>
 <li>When training the environment, set <code>train_mode=True</code>, so that the line for resetting the environment looks like the following:<div class="highlight"><pre><span></span><span class="n">env_info</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">train_mode</span><span class="o">=</span><span class="bp">True</span><span class="p">)[</span><span class="n">brain_name</span><span class="p">]</span>
 </pre></div>
@@ -13433,7 +13434,10 @@ States have length: 37
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Model">Model<a class="anchor-link" href="#Model">&#182;</a></h3>
+<h3 id="4.-Setup-Model">4. Setup Model<a class="anchor-link" href="#4.-Setup-Model">&#182;</a></h3><p>This QNetwork will later be used as the "q-table".<br/>
+    The input to the network is state<br/>
+    The output is the q values associate with the 4 action of the agent</p>
+
 </div>
 </div>
 </div>
@@ -13476,7 +13480,7 @@ States have length: 37
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Agent">Agent<a class="anchor-link" href="#Agent">&#182;</a></h3>
+<h3 id="5.-Agent">5. Agent<a class="anchor-link" href="#5.-Agent">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13652,7 +13656,8 @@ States have length: 37
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="DQN">DQN<a class="anchor-link" href="#DQN">&#182;</a></h3>
+<h3 id="6.-DQN">6. DQN<a class="anchor-link" href="#6.-DQN">&#182;</a></h3><p>This function is used to train the agent's deep q networks.</p>
+
 </div>
 </div>
 </div>
@@ -13715,11 +13720,7 @@ States have length: 37
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Training">Training<a class="anchor-link" href="#Training">&#182;</a></h3><p>The below link said "𝛿 = 1 represented MAE quite accurately, while 𝛿 = 3 tends to go towards MSE already. What if you used 𝛿 = 1.5 instead? You may benefit from both worlds". 
-<a href="https://www.machinecurve.com/index.php/2019/10/12/using-huber-loss-in-keras/">https://www.machinecurve.com/index.php/2019/10/12/using-huber-loss-in-keras/</a>
-I used 1.35 shown in the code block below:</p>
-<h1 id="set-up-the-learning-agent,-the-hyperparameter-(delta)-was-choose-base-on-this-link--&gt;">set up the learning agent, the hyperparameter (delta) was choose base on this link -&gt;<a class="anchor-link" href="#set-up-the-learning-agent,-the-hyperparameter-(delta)-was-choose-base-on-this-link--&gt;">&#182;</a></h1><h1 id="https://stats.stackexchange.com/questions/465937/how-to-choose-delta-parameter-in-huber-loss-function/473767"><a href="https://stats.stackexchange.com/questions/465937/how-to-choose-delta-parameter-in-huber-loss-function/473767">https://stats.stackexchange.com/questions/465937/how-to-choose-delta-parameter-in-huber-loss-function/473767</a><a class="anchor-link" href="#https://stats.stackexchange.com/questions/465937/how-to-choose-delta-parameter-in-huber-loss-function/473767">&#182;</a></h1><p>agent = Agent(state_size=37, action_size=4, seed=0)
-agent.max_gradient_norm = 1.35 #set the loss function with Huber</p>
+<h3 id="7.-Training">7. Training<a class="anchor-link" href="#7.-Training">&#182;</a></h3><p>Start the training here</p>
 
 </div>
 </div>
@@ -13790,7 +13791,8 @@ Environment solved in 435 episodes!	Average Score: 13.02
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="CSV-helper-function">CSV helper function<a class="anchor-link" href="#CSV-helper-function">&#182;</a></h3>
+<h4 id="CSV-helper-function">CSV helper function<a class="anchor-link" href="#CSV-helper-function">&#182;</a></h4><p>This function helps to store and read the scores from a csv file</p>
+
 </div>
 </div>
 </div>
@@ -13839,6 +13841,14 @@ Environment solved in 435 episodes!	Average Score: 13.02
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="8.-Evaluate-Data">8. Evaluate Data<a class="anchor-link" href="#8.-Evaluate-Data">&#182;</a></h3><p>The agent has met the requirement and reached 13 average score in 535 episodes.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
