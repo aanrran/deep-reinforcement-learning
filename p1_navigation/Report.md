@@ -6,11 +6,11 @@ In this report, I will go through my learning algorithms and the training result
 
 The source code for this project can be find in Navigation.ipynb. The main algorithms are listed below:
 
-1. Double DQN
+1. Double DQN<br/>
    Based on the course material, I added the double DQN from the basic deep Q-learning. This algorithm helps the agent to stabilize for its neuronetwork. 
-2. Experience Replay
+2. Experience Replay<br/>
    I created a buffer project that collect data as the agent explore. Later, the agent can use these data to train itself.
-3. Huber Loss
+3. Huber Loss<br/>
    I used huber loss function to stabilize the training loss function.
 
 ## Final Result:
