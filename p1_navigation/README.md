@@ -41,6 +41,10 @@ The task is episodic, and in order to solve the environment, the agent must get 
 - model.pth:                           this file is the trained basic agent model that contains the saved Model Weights for this project
 - scores.csv:                          this file stores my basic agent performance scores during training
 
+### Architecture:
+
+The agent will explore the environment and collect experience to its buffer bucket by taking actions generated from its neuronetwork. Meanwhile, the agent will use the experience buffer bucket to train its network.<img src="Image/architecture.JPG" alt="image1"  width="800" height="500"/>
+
 ### Training Code and Framework:
 
 Please look at Navigation.ipynb and Navigation_Pixels.ipynb for reference.
