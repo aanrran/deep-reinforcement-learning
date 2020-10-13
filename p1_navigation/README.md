@@ -47,16 +47,16 @@ The agent will explore the environment and collect experience to its buffer buck
 
 ### Network Model:
 
-I used the resnet 18 + three fully connected layers![resnet 18](https://www.researchgate.net/profile/Muhammad_Hasan19/publication/323063171/figure/fig1/AS:603178554904576@1520820382219/Proposed-Modified-ResNet-18-architecture-for-Bangla-HCR-In-the-diagram-conv-stands-for.png)
+I used the resnet 18 + three fully connected layers<img src="Image/resnet.JPG" alt="image1"  width="1000" height="320"/>
 
 The fully connected layer looks like this:
-![image-20201013123523372](C:\Users\Aaron\AppData\Roaming\Typora\typora-user-images\image-20201013123523372.png)
+<img src="Image/fc_pixel.JPG"/>
 
 ### Training Code and Framework:
 
 Please look at Navigation.ipynb and Navigation_Pixels.ipynb for reference.
 
-the training parameters are shown below:![image-20201013122734152](C:\Users\Aaron\AppData\Roaming\Typora\typora-user-images\image-20201013122734152.png)![image-20201013122913072](C:\Users\Aaron\AppData\Roaming\Typora\typora-user-images\image-20201013122913072.png)
+the training parameters are shown below:<img src="Image/LR_pixel.JPG"/>
 
 ### Training Results:
 
