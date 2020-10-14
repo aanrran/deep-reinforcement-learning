@@ -48,8 +48,11 @@ The agent will explore the environment and collect experience to its buffer buck
 ### Key Algorithms:
 
 - Double DQN --- Two brains work together to provide more stabilize the training. One brain choose action for another brain to get the Q value of this action.
+
 - Dueling DDQN --- Two brains share some knowledges to stabilize the training process.
+
 - Huber Loss --- improve the MSE training loss to be more robust for large errors
+  
   <img src="Image/regressionlosses.png" alt="image1"  width="400" height="275"/>
 
 ### Network Model:
