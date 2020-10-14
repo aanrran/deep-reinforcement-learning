@@ -45,16 +45,16 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 The agent will explore the environment and collect experience to its buffer bucket by taking actions generated from its neuronetwork. Meanwhile, the agent will use the experience buffer bucket to train its network.<img src="Image/architecture.JPG" alt="image1"  width="1100" height="620"/>
 
+### Key Algorithms:
+
+- Double DQN --- Two brains work together to provide more stabilize the training. One brain choose action for another brain to get the Q value of this action.
+- Dueling DDQN --- Two brains share some knowledges to stabilize the training process.
+- Huber Loss --- improve the MSE training loss to be more robust for large errors
+  <img src="Image/regressionlosses.png" alt="image1"  width="400" height="275"/>
+
 ### Network Model:
 
-I used the resnet 18 + three fully connected layers<img src="Image/resnet.JPG" alt="image1"  width="1000" height="320"/>
-
-The fully connected layer looks like this:
-<img src="Image/fc_pixel.JPG"/>
-
-### Training Code and Framework:
-
-Please look at Navigation.ipynb and Navigation_Pixels.ipynb for reference.
+I used CNN+fully connected layers. The network structure is shown below:<img src="Image/fc_pixel.JPG"/>
 
 the training parameters are shown below:<img src="Image/LR_pixel.JPG"/>
 
