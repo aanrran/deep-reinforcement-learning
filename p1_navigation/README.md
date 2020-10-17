@@ -63,7 +63,7 @@ the training parameters are shown below:<img src="Image/LR_pixel.JPG"/>
 
 ### Training Results:
 
-My basic agent training take place in file `Navigation.ipynb`. The agent took about 535 episodes to reach 13 average score:
+My basic agent training took place in file `Navigation.ipynb`. The agent took about 535 episodes to reach 13 average score:
 
 <img src="Image/report.jpg" alt="image1"  width="800" height="500"/>.
 
@@ -74,7 +74,7 @@ In the basic version, my agent learned from information such as its velocity, al
 ### Future Work:
 
 - design more data efficient agent with PER(Prioritized Replay).
-- fine tune the agent to get better score(now my Pixel version code runs well, but the average score still can not reach 13. I am still training, and hopefully it will be successful this time. The training time takes many hours.)
+- fine tune the hyperparameters
 
 ### Reference:
 
